@@ -13,29 +13,32 @@ At the moment Zepto.js is required.
 
 ##Usage
 Just add the following code inside you body tag:
+```js
     <ajs-container perspective="1000">
-      		<ajs-stage>
-		    		<ajs-box class="showFront">
-				    	<ajs-top>
-                <!--Your HTML code goes here-->
-              </ajs-top>
-              <ajs-front>
-                <!--Your HTML code goes here-->
-              </ajs-front>
-              <ajs-bottom>
-                <!--Your HTML code goes here-->
-              </ajs-bottom>
-              <ajs-rear>
-                <!--Your HTML code goes here-->
-              </ajs-rear>
-              <ajs-left>
-                <!--Your HTML code goes here-->
-              </ajs-left>
-              <ajs-right>
-                <!--Your HTML code goes here-->
-              </ajs-right>
-          </ajs-stage>
+        <ajs-stage>
+            <ajs-box>
+                <ajs-top>
+                    <!--Your HTML code goes here-->
+                </ajs-top>
+                <ajs-front>
+                    <!--Your HTML code goes here-->
+                </ajs-front>
+                <ajs-bottom>
+                    <!--Your HTML code goes here-->
+                </ajs-bottom>
+                <ajs-rear>
+                    <!--Your HTML code goes here-->
+                </ajs-rear>
+                <ajs-left>
+                    <!--Your HTML code goes here-->
+                </ajs-left>
+                <ajs-right>
+                    <!--Your HTML code goes here-->
+                </ajs-right>
+            <ajs-box>
+        </ajs-stage>
     </ajs-container>
+```
 
 You don't have to use all box faces and also the insertion order is not important.
 The directive will add a "face" class to all faces and also a proper class (e.g. "top", "front", and so on).
