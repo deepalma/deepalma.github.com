@@ -1,0 +1,55 @@
+html, body {
+	height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, Sans-serif;
+}
+
+.face {
+  display: table;
+  opacity: 0.9;
+}
+.face > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.face h1 {
+  font-size: 100px;
+}
+
+.face.front {
+  background-color: #F3F3F5;
+}
+
+.face.left {
+  background-color: #445763;
+}
+
+.face.right {
+  background-color: deeppink;
+}
+
+.face.top {
+  background-color: rgb(162,172,177);
+}
+
+.face.bottom {
+  background-color: linen;
+}
+
+.face.rear {
+  background-color: yellow;
+}
+
+#demoControls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+#demoControls input {
+  opacity: 0;
+}

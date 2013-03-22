@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body ng-app="DemoApp">
+		<div id="demoControls">
+			<input id="keys" type="text" ng-model="match" autofocus="autofocus">
+		</div>
+		<ajs-container perspective="1000">
+			<ajs-stage>
+				<ajs-box class="showFront">
+					<ajs-top>
+						<div>
+							<h1>1</h1>
+							<p>Press key 1-5 to show the corresponding face</p>	
+						</div>
+					</ajs-top>					
+					<ajs-front>
+						<div>
+							<h1>2</h1>
+						</div>
+					</ajs-front>
+					<ajs-bottom>
+						<div>
+							<h1>3</h1>
+						</div>
+					</ajs-bottom>
+					<ajs-rear>
+						<div>
+							<h1>4</h1>	
+						</div>
+					</ajs-rear>
+					<ajs-left>
+						<div>
+							<h1>5</h1>	
+						</div>
+					</ajs-left>
+					<ajs-right>
+						<div>
+							<h1>6</h1>
+						</div>
+					</ajs-right>
+				</ajs-box>    
+			</ajs-stage>       
+		</ajs-container>
+		<script src="js/lib/zepto.min.js"></script>
+		<script src="js/lib/angular.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/directives.js"></script>
+		<script>
+			$(window).on('click', function(){
+				$('#keys').focus();
+			});
+			$(window).on('swipeLeft', function(){
+				$('#keys').val('5');
+			});
+		</script>
+	</body>
+</html>
